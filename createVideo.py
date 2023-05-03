@@ -25,7 +25,7 @@ height, width, channels = frame.shape;
 size = (width, height);
 print(size);
 
-out = cv2.VideoWriter("Project.avi", cv2.VideoWriter_fourcc(*"DIVX"), 0.8, size)
+out = cv2.VideoWriter("Project.avi", cv2.VideoWriter_fourcc('m','p','4','v'), 0.8, size)
 
 for i in range(0, count-1):
     imagens = cv2.imread(Images[1]);
